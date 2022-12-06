@@ -8,5 +8,6 @@ public class Main {
         katya.hello();
         Person artem = new Person(1995,"Артем", "Москва", "директор по развитию бизнеса");
         artem.hello();
+        System.out.println(maxim);
     }
 }

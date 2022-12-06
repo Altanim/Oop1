@@ -9,15 +9,14 @@ public class Person {
     }
 
     Person(int yearOfBirth, String name, String town, String jobTitle) {
-       if (yearOfBirth <= 0) {
-           yearOfBirth = 0;
-       } else {this.yearOfBirth = yearOfBirth;}
+       this.yearOfBirth = yearOfBirth;
             this.name = name;
             this.town = town;
             this.jobTitle = jobTitle;
     }
         void hello(){
-            System.out.println("Привет! Меня зовут " + getName() + ". Я из города " + getTown() + ". Год рождения: " + yearOfBirth +
+            System.out.println("Привет! Меня зовут " + getName() + ". Я из города " + getTown()
+                    + ". Год рождения: " + getYearOfBirth() +
                     ". Я работаю на должности " + getJobTitle() + ". Будем знакомы!");
         }
         public String getName(){
@@ -34,6 +33,12 @@ public class Person {
         if (jobTitle == null) {
             jobTitle = "Информация не указана";}
         return jobTitle;
+    }
+    public int getYearOfBirth(){
+        if (yearOfBirth <= 0) {
+            yearOfBirth = 0;
+        }
+        return yearOfBirth;
     }
     @Override
     public String toString() {
