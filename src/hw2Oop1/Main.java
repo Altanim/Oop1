@@ -12,6 +12,24 @@ public class Main {
         artem.hello();
         Human vladimir = new Human(2001, "Владимир", "Казань","безработный");
         vladimir.hello();
+
+
+        System.out.println();
+
+
+        Flower rose = new Flower("Роза обыкновенная", "Голландия", 35.59f,0);
+        rose.flowerInfo();
+        Flower hrizantema = new Flower("Хризантема", null, 15.00f, 5);
+        hrizantema.flowerInfo();
+        Flower pion = new Flower("Пион", "Англия", 69.90f, 1 );
+        pion.flowerInfo();
+        Flower gipsofila = new Flower("Гипсофила", "Турция", 19.50f,10);
+        gipsofila.flowerInfo();
+        Bouquet bouquet1 = new Bouquet(rose,rose,pion,pion,pion, gipsofila,hrizantema);
+        System.out.println(bouquet1);
+
     }
-}
+
+    }
+
 
